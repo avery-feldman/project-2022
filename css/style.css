@@ -1,0 +1,22 @@
+.gallery img{
+    max-height: 500px;
+    max-width: 500px;
+
+}
+
+main{
+    background: gray;
+
+}
+
+.index img{
+    display: block;
+    margin: auto;
+    border: 3px solid black;
+
+}
+
+.active a{
+    border: 2px solid black;
+    
+}
