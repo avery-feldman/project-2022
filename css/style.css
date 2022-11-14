@@ -10,6 +10,20 @@ main{
 
 }
 
+.jump a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: -100px;
+
+}
+
+.jump a:focus{
+    font-family: 'Josefin Sans', sans-serif;
+    top: 10px;
+
+}
+
 .index img{
     display: block;
     margin: auto;
@@ -35,3 +49,4 @@ nav li{
     display:inline;
     padding:20px;
 }
+
