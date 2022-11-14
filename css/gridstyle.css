@@ -4,6 +4,8 @@
     margin: auto;
     justify-content: center;
     justify-items: center;
+    overflow: hidden;
+
 
 }
 
@@ -17,13 +19,11 @@ h1{
 
 }
 
-
-@media screen and (min-width:800px){
+@media screen and (min-width:900px){
     .grid{
         grid-template-columns: auto auto;
         justify-content: space-around;
 
-        
     }
 
     .grid img{
@@ -33,19 +33,12 @@ h1{
 
 }
 
-
-
-@media screen and (min-width:1200px){
+@media screen and (min-width:1300px){
     .grid{
         grid-template-columns: auto auto auto;
         justify-content: space-evenly;
     }
 
-
     }
-    /*.grid
-    .grid img{
-        width: 400px;
-        height: 400px;
-    } */
+
 
