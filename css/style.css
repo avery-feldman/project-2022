@@ -86,8 +86,12 @@ h1{
 
 }
 
+.lb-data .lb-caption{
+    font-size:20px;
 
-@media screen and (min-width:800px){
+}
+
+@media screen and (min-width:900px){
     nav{
         text-align: left;
     
