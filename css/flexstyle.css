@@ -1,0 +1,39 @@
+.flex{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+}
+
+.column{
+    align-items: center;
+    justify-content: center;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+
+}
+
+.column img{
+    margin: 10px;
+    
+}
+
+@media screen and (min-width:900px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+
+    }
+
+}
+
+@media screen and (min-width:1300px){
+    .column{
+        flex: 25%;
+        max-width: 25%;
+
+    }
+
+}
