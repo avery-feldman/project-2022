@@ -103,7 +103,7 @@ h1{
 }
 
 @media screen and (min-width:900px){
-    nav{
+    .gridnav, .indexnav{
         text-align: left;
     
     }
@@ -111,7 +111,7 @@ h1{
 }
 
 @media screen and (min-width:1300px){
-    nav{
+    .gridnav, .indexnav{
         text-align: right;
     
     }
