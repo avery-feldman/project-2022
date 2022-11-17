@@ -37,6 +37,10 @@ main{
 
 }
 
+.index{
+    text-align: center;
+}
+
 .active a{
     border: 2px solid #252323;
     padding: 3px;
@@ -91,6 +95,12 @@ h1{
 
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
 .footer a{
     font-size: 15px;
     font-family: 'Josefin Sans', sans-serif;  
@@ -118,9 +128,6 @@ h1{
 
 }
 
-
-
-
 /* Animation */
 #pause:checked ~ #slide > img {
     animation-play-state: paused;
@@ -139,11 +146,19 @@ h1{
 }
 
 @keyframes autoplay{
-    0% {z-index: 0}
-    3.56142857143% {z-index: 0}
-    3.57142857143% {z-index: -1}
-}
+    0% {
+        z-index: 0
+    }
+    
+    3.56142857143% {
+        z-index: 0
+    }
 
+    3.57142857143% {
+        z-index: -1
+    }
+}
+/* fix animation overlap with slide 1 and 28 */
 #slide > img:nth-child(1){
     animation-delay: 0s
 
