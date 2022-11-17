@@ -137,8 +137,10 @@ p{
 #slide{
     height: 500px;
     position: relative;
+    margin: 10px;
     
 }
+
 
 #slide > img{
     animation: 108s autoplay infinite;
