@@ -105,7 +105,7 @@ main p{
 
 footer div p, footer div a{
     font-family: 'Josefin Sans', sans-serif;  
-    margin: 10px 0;
+    margin-top: 10px;
     font-size: 15px;
     text-align: center;
 }
@@ -137,6 +137,13 @@ footer div p, footer div a{
 
 }
 
+@media screen and (prefers-reduced-motion: reduce){
+    /* not done add js prob */
+    #slide{
+        animation: none;
+    }
+}
+
 /* Animation */
 label{
     font-family: Arial, Helvetica, sans-serif;
@@ -157,7 +164,7 @@ label{
 
 
 #slide > img{
-    animation: 108s autoplay infinite;
+    animation: 112s autoplay infinite;
     position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
 }
 
