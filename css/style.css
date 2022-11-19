@@ -11,6 +11,7 @@ html{
 
 main{
     background: #70798C;
+    overflow: hidden;
 
 }
 
@@ -80,31 +81,33 @@ nav li a, nav li a:active, a, a:visited{
 
 h1{
     font-size: 50px;
-    text-align: start;
+    text-align: center;
     padding: 10px;
+    margin:10px;
 
 }
 
-.footer, nav{
+footer, nav{
     background: #F5F1ED;
     
 }
 
-.footer{
+footer div{
     border-top: 3px solid #252323;
 
 }
 
-p{
+main p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
-.footer a{
-    font-size: 15px;
+footer div p, footer div a{
     font-family: 'Josefin Sans', sans-serif;  
-
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: center;
 }
 
 .lb-data .lb-caption{
@@ -117,6 +120,7 @@ p{
         text-align: left;
     
     }
+    
 
 }
 
@@ -125,10 +129,20 @@ p{
         text-align: right;
     
     }
+    
+    footer div p, footer div a{
+        text-align: left;
+
+    }
 
 }
 
 /* Animation */
+label{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 #pause:checked ~ #slide > img {
     animation-play-state: paused;
 
