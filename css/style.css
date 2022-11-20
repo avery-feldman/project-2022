@@ -40,6 +40,7 @@ main{
 
 .index{
     text-align: center;
+
 }
 
 .active a{
@@ -137,13 +138,6 @@ footer div p, footer div a{
 
 }
 
-@media screen and (prefers-reduced-motion: reduce){
-    /* not done add js prob */
-    #slide{
-        animation: none;
-    }
-}
-
 /* Animation */
 label{
     font-family: Arial, Helvetica, sans-serif;
@@ -157,6 +151,7 @@ label{
 
 #slide{
     height: 500px;
+    justify-self: center;
     position: relative;
     margin: 10px;
     
@@ -181,7 +176,7 @@ label{
         z-index: -1
     }
 }
-/* fix animation overlap with slide 1 and 28 */
+
 #slide > img:nth-child(1){
     animation-delay: 0s
 
@@ -316,5 +311,19 @@ label{
 
 #slide > img:nth-child(28){
     animation-delay: 108s
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    /* not done add js prob */
+    #slide > img{
+        animation: none;
+    
+    }
+
+    #slide{
+        background-image: url("/images/collage.png");
+        
+    }
 
 }
