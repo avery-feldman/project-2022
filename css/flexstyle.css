@@ -21,18 +21,19 @@
   }
   
   @media (min-width: 1065px) {
-    .flexnav{
-        text-align: left;
-    
-    }
+    .flexnav ul{
+      display: flex;
+      justify-content: space-evenly;
+  }
     
   }
   
   @media (min-width: 1588px) {
-    .flexnav{
-        text-align: right;
-    
-    }
+    .flexnav ul{
+      justify-content: flex-end;
+  
+  }
+  
   }
   
  

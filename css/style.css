@@ -21,7 +21,7 @@ html{
 
 nav{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     padding: 25px 0; 
     text-align: center;
     border-bottom: 3px solid #252323;
@@ -57,16 +57,20 @@ main{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     padding: 10px;
     margin:10px;
 
 }
 
+.album-header{
+    display: none;
+}
+
 main p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 
 }
@@ -118,24 +122,130 @@ footer div p, footer div a{
 
 }
 
-@media screen and (min-width:900px){
-    .altnav{
-        text-align: left;
-    
-    }
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+
+}
+
+.grid img{
+    margin: 10px;
     
 }
 
-@media screen and (min-width:1300px){
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row;
+
+}
+  
+  
+.flex img{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.gallery img:hover, .gallery img:focus{
+    border:5px solid #252323;
+
+}
+  
+@media screen and (min-width:900px){
+    .altnav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main p{
+        font-size: 20px;
+
+    }
+
+    #album2-header, #indexheader{
+        font-size: 50px;
+
+    }
+
     .altnav{
-        text-align: right;
+        font-size: 30px;
+
+    }
+
+    .jump a{
+        font-size: 20px;
+
+    }
+
+    .grid{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+
+    }
+
+    .grid img{
+        max-width: 400px;
+        height: 350px;
+
+    } 
+
+    #album2-header{
+        display: block;
+    }
+
+}
+
+@media (min-width: 1065px) {
+    /* maybe make images normal width in mobile and make same in flex media */
+    #flexnav ul{
+      display: flex;
+      justify-content: space-evenly;
+  }
+    
+  #flexnav{
+    font-size: 30px;
+  }
+
+  #album1-header{
+    display: block;
+    font-size: 50px;
+}
+
+}
+
+@media screen and (min-width:1300px){
+    .altnav ul{
+        justify-content: flex-end;
     
     }
-    
+
     footer div p, footer div a{
         text-align: left;
 
     }
 
+    .grid{
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+
+    }
+
+}
+
+@media (min-width: 1588px) {
+    .flexnav ul{
+      justify-content: flex-end;
+  
+  }
+  
 }
 
