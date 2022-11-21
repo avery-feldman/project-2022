@@ -1,17 +1,5 @@
 html{
     color: black;
-}
-
-.gallery img{
-    max-height: 500px;
-    max-width: 500px;
-    border: 2px solid #252323;
-
-}
-
-main{
-    background: #70798C;
-    overflow: hidden;
 
 }
 
@@ -31,24 +19,6 @@ main{
 
 }
 
-.index img{
-    display: block;
-    margin: auto;
-    border: 3px solid #252323;
-
-}
-
-.index{
-    text-align: center;
-
-}
-
-.active a{
-    border: 2px solid #252323;
-    padding: 3px;
-    
-}
-
 nav{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
@@ -58,26 +28,32 @@ nav{
     
 }
 
+footer, nav{
+    background: #F5F1ED;
+    
+}
+
 nav li{
     display:inline;
     padding:20px;
 
 }
-       
-.gallery a:focus, .citation a:focus{
-    outline:none;
-
-}
-
-nav li a:hover, nav li a:focus, .gallery a:focus img, .gallery a:hover img{
-    border:5px solid #252323
-
-}
-
 
 nav li a, nav li a:active, a, a:visited{
     color:#252323
     
+}
+
+.active a{
+    border: 2px solid #252323;
+    padding: 3px;
+    
+}
+
+main{
+    background: #70798C;
+    overflow: hidden;
+
 }
 
 h1{
@@ -88,9 +64,40 @@ h1{
 
 }
 
-footer, nav{
-    background: #F5F1ED;
-    
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.index{
+    text-align: center;
+
+}
+
+.index img{
+    display: block;
+    margin: auto;
+    border: 3px solid #252323;
+
+}
+
+.gallery img{
+    max-height: 500px;
+    max-width: 500px;
+    border: 2px solid #252323;
+
+}
+     
+.gallery a:focus, .citation a:focus{
+    outline:none;
+
+}
+
+nav li a:hover, nav li a:focus, .gallery a:focus img, .gallery a:hover img{
+    border:5px solid #252323
+
 }
 
 footer div{
@@ -98,17 +105,12 @@ footer div{
 
 }
 
-main p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
 footer div p, footer div a{
     font-family: 'Josefin Sans', sans-serif;  
     margin-top: 10px;
     font-size: 15px;
     text-align: center;
+
 }
 
 .lb-data .lb-caption{
@@ -117,16 +119,15 @@ footer div p, footer div a{
 }
 
 @media screen and (min-width:900px){
-    .gridnav, .indexnav{
+    .altnav{
         text-align: left;
     
     }
     
-
 }
 
 @media screen and (min-width:1300px){
-    .gridnav, .indexnav{
+    .altnav{
         text-align: right;
     
     }
@@ -138,192 +139,3 @@ footer div p, footer div a{
 
 }
 
-/* Animation */
-label{
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-#pause:checked ~ #slide > img {
-    animation-play-state: paused;
-
-}
-
-#slide{
-    height: 500px;
-    justify-self: center;
-    position: relative;
-    margin: 10px;
-    
-}
-
-
-#slide > img{
-    animation: 112s autoplay infinite;
-    position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
-}
-
-@keyframes autoplay{
-    0% {
-        z-index: 0
-    }
-    
-    3.56142857143% {
-        z-index: 0
-    }
-
-    3.57142857143% {
-        z-index: -1
-    }
-}
-
-#slide > img:nth-child(1){
-    animation-delay: 0s
-
-}
-
-#slide > img:nth-child(2){
-    animation-delay: 4s
-
-}
-
-#slide > img:nth-child(3){
-    animation-delay: 8s
-
-}
-
-#slide > img:nth-child(4){
-    animation-delay: 12s
-
-}
-
-#slide > img:nth-child(5){
-    animation-delay: 16s
-
-}
-#slide > img:nth-child(6){
-    animation-delay: 20s
-
-}
-#slide > img:nth-child(7){
-    animation-delay: 24s
-
-}
-#slide > img:nth-child(8){
-    animation-delay: 28s
-
-}
-
-#slide > img:nth-child(9){
-    animation-delay: 32s
-
-}
-
-#slide > img:nth-child(10){
-    animation-delay: 36s
-
-}
-
-#slide > img:nth-child(11){
-    animation-delay: 40s
-
-}
-
-#slide > img:nth-child(12){
-    animation-delay: 44s
-
-}
-
-#slide > img:nth-child(13){
-    animation-delay: 48s
-
-}
-
-#slide > img:nth-child(14){
-    animation-delay: 52s
-
-}
-
-#slide > img:nth-child(15){
-    animation-delay: 56s
-
-}
-
-#slide > img:nth-child(16){
-    animation-delay: 60s
-
-}
-
-#slide > img:nth-child(17){
-    animation-delay: 64s
-
-}
-
-#slide > img:nth-child(18){
-    animation-delay: 68s
-
-}
-
-#slide > img:nth-child(19){
-    animation-delay: 72s
-
-}
-
-#slide > img:nth-child(20){
-    animation-delay: 76s
-
-}
-
-#slide > img:nth-child(21){
-    animation-delay: 80s
-
-}
-
-#slide > img:nth-child(22){
-    animation-delay: 84s
-
-}
-
-#slide > img:nth-child(23){
-    animation-delay: 88s
-
-}
-
-#slide > img:nth-child(24){
-    animation-delay: 92s
-
-}
-
-#slide > img:nth-child(25){
-    animation-delay: 96s
-
-}
-
-#slide > img:nth-child(26){
-    animation-delay: 100s
-
-}
-
-#slide > img:nth-child(27){
-    animation-delay: 104s
-
-}
-
-#slide > img:nth-child(28){
-    animation-delay: 108s
-
-}
-
-@media screen and (prefers-reduced-motion: reduce){
-    /* not done add js prob */
-    #slide > img{
-        animation: none;
-    
-    }
-
-    #slide{
-        background-image: url("/images/collage.png");
-        
-    }
-
-}
