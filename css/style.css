@@ -155,6 +155,10 @@ footer div p, footer div a{
 
 }
 
+#album1-header, #album2-header{
+    display: hidden;
+}
+
 .gallery img:hover, .gallery img:focus{
     border:5px solid #252323;
 
@@ -206,6 +210,7 @@ footer div p, footer div a{
 
 @media (min-width: 1065px) {
     /* maybe make images normal width in mobile and make same in flex media */
+    /* fix so that nav changes properly */
     #flexnav ul{
       display: flex;
       justify-content: space-evenly;
