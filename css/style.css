@@ -155,17 +155,13 @@ footer div p, footer div a{
 
 }
 
-#album1-header, #album2-header{
-    display: hidden;
-}
-
 .gallery img:hover, .gallery img:focus{
     border:5px solid #252323;
 
 }
   
 @media screen and (min-width:900px){
-    .altnav ul{
+    nav ul{
         display: flex;
         justify-content: space-evenly;
     }
@@ -175,12 +171,7 @@ footer div p, footer div a{
 
     }
 
-    #album2-header, #indexheader{
-        font-size: 50px;
-
-    }
-
-    .altnav{
+    nav{
         font-size: 30px;
 
     }
@@ -188,6 +179,11 @@ footer div p, footer div a{
     .jump a{
         font-size: 20px;
 
+    }
+
+    .jump a:focus{
+        top: 30px;
+    
     }
 
     .grid{
@@ -202,27 +198,62 @@ footer div p, footer div a{
 
     } 
 
-    #album2-header{
+    .album-header, h1{
         display: block;
-    }
+      font-size: 50px;
+      
+  }
+
+  .flex img{
+    width: 40%;
+
+  }
 
 }
 
-@media (min-width: 1065px) {
-    /* maybe make images normal width in mobile and make same in flex media */
-    /* fix so that nav changes properly */
+@media screen and (min-width:1300px){
+    nav ul{
+        justify-content: flex-end;
+    
+    }
+
+    footer div p, footer div a{
+        text-align: left;
+
+    }
+
+    .grid{
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+
+    }
+
+    .flex img{
+        width: 30%;
+
+}
+
+}
+
+/*@media (min-width: 1065px) {
+    maybe make images normal width in mobile and make same in flex media
+    fix so that nav changes properly
+    mess around with not having this media and doing 2 min-widths
     #flexnav ul{
       display: flex;
       justify-content: space-evenly;
+
   }
     
   #flexnav{
     font-size: 30px;
+
   }
 
   #album1-header{
     display: block;
     font-size: 50px;
+
 }
 
 }
@@ -252,5 +283,5 @@ footer div p, footer div a{
   
   }
   
-}
+} */
 
