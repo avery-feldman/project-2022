@@ -139,11 +139,11 @@ footer div p, footer div a{
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-    overflow: hidden;
-    flex-direction: row;
+    overflow: auto;
+    flex-direction: row;  
+    min-height: 100vh;  
 
 }
   
@@ -204,6 +204,11 @@ footer div p, footer div a{
       
   }
 
+  .flex{
+    flex-wrap: wrap; 
+    justify-content: center;
+
+  }
   .flex img{
     width: 40%;
 
