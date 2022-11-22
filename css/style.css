@@ -123,6 +123,7 @@ footer div p, footer div a{
 }
 
 .grid{
+    /* maybe do this instead so the grid is more different https://stackoverflow.com/questions/50801447/how-do-i-do-a-single-row-vertically-centered-layout-in-css-grid#:~:text=To%20force%20all%20items%20into,%2Ditems%20value%20by%20default).*/
     display: grid;
     grid-template-columns: auto;
     margin: auto;
@@ -209,6 +210,7 @@ footer div p, footer div a{
     justify-content: center;
 
   }
+  
   .flex img{
     width: 40%;
 
