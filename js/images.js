@@ -1,5 +1,6 @@
 /* Centers scroll bar on image when in focus */
     function Scroll(obj) {
+        console.log("hi")
         obj.scrollIntoView();
 
     }
