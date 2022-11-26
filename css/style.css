@@ -123,7 +123,6 @@ footer div p, footer div a{
 }
 
 .grid{
-    /* maybe do this instead so the grid is more different https://stackoverflow.com/questions/50801447/how-do-i-do-a-single-row-vertically-centered-layout-in-css-grid#:~:text=To%20force%20all%20items%20into,%2Ditems%20value%20by%20default).*/
     display: grid;
     grid-template-columns: auto;
     margin: auto;
@@ -141,6 +140,7 @@ footer div p, footer div a{
 .grid a{
     grid-row: 1/-1;
     align-self: center;
+    text-decoration: none;
 
 }
 
@@ -153,9 +153,8 @@ footer div p, footer div a{
     min-height: 100vh;  
 
 }
-  
-  
-.flex img{
+
+.flex figure{
     margin: 10px;
     width: 100%;
     height: 100%;
@@ -166,7 +165,12 @@ footer div p, footer div a{
     border:5px solid #252323;
 
 }
-/*make four images per row for big mode and make mobile view grid look like flex */
+
+figcaption{
+    display: none;
+}
+
+/* add documentation to explain what css does */
 @media screen and (min-width:900px){
     nav ul{
         display: flex;
@@ -222,9 +226,14 @@ footer div p, footer div a{
 
   }
   
-  .flex img{
+  .flex figure{
     width: 40%;
 
+
+  }
+
+  .flex figure img{
+    width: 100%;
   }
 
 }
@@ -246,60 +255,21 @@ footer div p, footer div a{
 
     }
 
-    .flex img{
+    .flex figure{
+        text-align: center;
         width: 30%;
 
 }
 
-}
-
-/*@media (min-width: 1065px) {
-    maybe make images normal width in mobile and make same in flex media
-    fix so that nav changes properly
-    mess around with not having this media and doing 2 min-widths
-    #flexnav ul{
-      display: flex;
-      justify-content: space-evenly;
-
-  }
-    
-  #flexnav{
-    font-size: 30px;
-
-  }
-
-  #album1-header{
-    display: block;
-    font-size: 50px;
-
+figcaption{
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:none;
+    margin: 10px;
+    color:black;
 }
 
 }
-
-@media screen and (min-width:1300px){
-    .altnav ul{
-        justify-content: flex-end;
-    
-    }
-
-    footer div p, footer div a{
-        text-align: left;
-
-    }
-
-    .grid{
-        grid-template-columns: auto auto auto;
-        justify-content: space-evenly;
-
-    }
-
-}
-
-@media (min-width: 1588px) {
-    .flexnav ul{
-      justify-content: flex-end;
-  
-  }
-  
-} */
 
