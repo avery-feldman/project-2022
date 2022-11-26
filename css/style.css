@@ -17,6 +17,7 @@ html{
 
 .jump a:focus{
     top: 10px;
+    border: 2px solid #252323;
 
 }
 
@@ -84,6 +85,12 @@ main p{
 
 }
 
+/* adds border around slideshow toggle in focus or hover */
+.index input:hover, .index input:focus{
+    outline: 3px solid #252323;
+
+}
+
 .index img{
     display: block;
     margin: auto;
@@ -120,6 +127,10 @@ footer div p, footer div a{
     font-size: 15px;
     text-align: center;
 
+}
+
+footer div a:hover, footer div a:focus{
+    border: 2px solid #252323;
 }
 
 .lb-data .lb-caption{
