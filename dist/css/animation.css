@@ -10,7 +10,7 @@ label{
 }
 
 
-#pause:checked ~ #slide > img {
+#pause:checked ~ #slide > figure {
     animation-play-state: paused;
 
 }
@@ -24,7 +24,7 @@ label{
 }
 
 /* Animation */
-#slide > img{
+#slide > figure{
     animation: 112s autoplay infinite;
     position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
 
@@ -44,146 +44,146 @@ label{
     }
 }
 
-#slide > img:nth-child(1){
+#slide > figure:nth-child(1){
     animation-delay: 0s
 
 }
 
-#slide > img:nth-child(2){
+#slide > figure:nth-child(2){
     animation-delay: 4s
 
 }
 
-#slide > img:nth-child(3){
+#slide > figure:nth-child(3){
     animation-delay: 8s
 
 }
 
-#slide > img:nth-child(4){
+#slide > figure:nth-child(4){
     animation-delay: 12s
 
 }
 
-#slide > img:nth-child(5){
+#slide > figure:nth-child(5){
     animation-delay: 16s
 
 }
-#slide > img:nth-child(6){
+#slide > figure:nth-child(6){
     animation-delay: 20s
 
 }
-#slide > img:nth-child(7){
+#slide > figure:nth-child(7){
     animation-delay: 24s
 
 }
-#slide > img:nth-child(8){
+#slide > figure:nth-child(8){
     animation-delay: 28s
 
 }
 
-#slide > img:nth-child(9){
+#slide > figure:nth-child(9){
     animation-delay: 32s
 
 }
 
-#slide > img:nth-child(10){
+#slide > figure:nth-child(10){
     animation-delay: 36s
 
 }
 
-#slide > img:nth-child(11){
+#slide > figure:nth-child(11){
     animation-delay: 40s
 
 }
 
-#slide > img:nth-child(12){
+#slide > figure:nth-child(12){
     animation-delay: 44s
 
 }
 
-#slide > img:nth-child(13){
+#slide > figure:nth-child(13){
     animation-delay: 48s
 
 }
 
-#slide > img:nth-child(14){
+#slide > figure:nth-child(14){
     animation-delay: 52s
 
 }
 
-#slide > img:nth-child(15){
+#slide > figure:nth-child(15){
     animation-delay: 56s
 
 }
 
-#slide > img:nth-child(16){
+#slide > figure:nth-child(16){
     animation-delay: 60s
 
 }
 
-#slide > img:nth-child(17){
+#slide > figure:nth-child(17){
     animation-delay: 64s
 
 }
 
-#slide > img:nth-child(18){
+#slide > figure:nth-child(18){
     animation-delay: 68s
 
 }
 
-#slide > img:nth-child(19){
+#slide > figure:nth-child(19){
     animation-delay: 72s
 
 }
 
-#slide > img:nth-child(20){
+#slide > figure:nth-child(20){
     animation-delay: 76s
 
 }
 
-#slide > img:nth-child(21){
+#slide > figure:nth-child(21){
     animation-delay: 80s
 
 }
 
-#slide > img:nth-child(22){
+#slide > figure:nth-child(22){
     animation-delay: 84s
 
 }
 
-#slide > img:nth-child(23){
+#slide > figure:nth-child(23){
     animation-delay: 88s
 
 }
 
-#slide > img:nth-child(24){
+#slide > figure:nth-child(24){
     animation-delay: 92s
 
 }
 
-#slide > img:nth-child(25){
+#slide > figure:nth-child(25){
     animation-delay: 96s
 
 }
 
-#slide > img:nth-child(26){
+#slide > figure:nth-child(26){
     animation-delay: 100s
 
 }
 
-#slide > img:nth-child(27){
+#slide > figure:nth-child(27){
     animation-delay: 104s
 
 }
 
-#slide > img:nth-child(28){
+#slide > figure:nth-child(28){
     animation-delay: 108s
 
 }
 
 /* Turn off animation and replace with collage when in reduced motion mode*/
 @media screen and (prefers-reduced-motion: reduce){
-    #slide > img{
+    #slide > figure{
         animation: none;
     
     }
