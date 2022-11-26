@@ -3,6 +3,7 @@ html{
 
 }
 
+/*Jump to content button */
 .jump a{
     font-size: 15px;
     position: absolute;
@@ -44,9 +45,11 @@ nav li a, nav li a:active, a, a:visited{
     
 }
 
+/* places border around active page in nav and boldens font */
 .active a{
-    border: 2px solid #252323;
+    border: 3px solid #252323;
     padding: 3px;
+    font-weight: bold;
     
 }
 
@@ -64,6 +67,7 @@ h1{
 
 }
 
+/* hides header in album 1 and 2 */
 .album-header{
     display: none;
 }
@@ -99,6 +103,7 @@ main p{
 
 }
 
+/* adds border around images when focused on or hovered over */
 nav li a:hover, nav li a:focus, .gallery a:focus img, .gallery a:hover img{
     border:5px solid #252323
 
@@ -122,6 +127,7 @@ footer div p, footer div a{
 
 }
 
+/* sets up grid for album 2 */
 .grid{
     display: grid;
     grid-template-columns: auto;
@@ -144,6 +150,7 @@ footer div p, footer div a{
 
 }
 
+/* sets up flex for album 1 */
 .flex{
     display: flex;
     flex-wrap: nowrap;
@@ -161,17 +168,20 @@ footer div p, footer div a{
 
 }
 
+/* adds border around images in hover or focus */
 .gallery img:hover, .gallery img:focus{
     border:5px solid #252323;
 
 }
 
+/* hides captions */
 figcaption{
     display: none;
 }
 
 /* add documentation to explain what css does */
 @media screen and (min-width:900px){
+    /* changes layout of nav - spaces it evenly and increases sizes */
     nav ul{
         display: flex;
         justify-content: space-evenly;
@@ -197,6 +207,7 @@ figcaption{
     
     }
 
+    /* changes grid layout - adds another column */
     .grid{
         grid-template-columns: auto auto;
         justify-content: space-around;
@@ -220,21 +231,22 @@ figcaption{
       
   }
 
-  .flex{
-    flex-wrap: wrap; 
-    justify-content: center;
+    /* changes flex layout - wraps content, changes size of content */
+    .flex{
+        flex-wrap: wrap; 
+        justify-content: center;
 
-  }
-  
-  .flex figure{
-    width: 40%;
+    }
+    
+    .flex figure{
+        width: 40%;
 
 
-  }
+    }
 
-  .flex figure img{
-    width: 100%;
-  }
+    .flex figure img{
+        width: 100%;
+    }
 
 }
 
@@ -249,32 +261,35 @@ figcaption{
 
     }
 
+    /* changes grid layout - adds another column */
     .grid{
         grid-template-columns: auto auto auto;
         justify-content: space-evenly;
 
     }
 
+    /* changes flex layout - makes room for another content per row */
     .flex figure{
         text-align: center;
         width: 30%;
 
 }
 
-figcaption{
-    display:block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-decoration:none;
-    margin: 10px;
-    color:black;
-}
+    /* adds caption */
+    figcaption{
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration:none;
+        margin: 10px;
+        color:black;
+    }
 
-#moreinfo{
-    margin-top: 25px;
+    #moreinfo{
+        margin-top: 25px;
 
-}
+    }
 
 }
 
