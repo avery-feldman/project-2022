@@ -71,7 +71,7 @@ h1{
 
 /* hides header in album 1 and 2 */
 .album-header{
-    display: none;
+    visibility: hidden;
 }
 
 main p{
@@ -188,7 +188,7 @@ footer div a:hover, footer div a:focus{
 
 /* hides captions */
 figcaption{
-    display: none;
+    visibility: hidden;
 }
 
 /* add documentation to explain what css does */
@@ -238,7 +238,7 @@ figcaption{
     }
 
     .album-header, h1{
-        display: block;
+      visibility: visible;
       font-size: 50px;
       
   }
@@ -295,7 +295,7 @@ figcaption{
 
     /* adds caption */
     figcaption{
-        display:block;
+        visibility: visible;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         text-align: center;
