@@ -188,7 +188,7 @@ footer div a:hover, footer div a:focus{
 }
 
 /* hides captions */
-figcaption{
+.caption, figcaption{
     display:none;
 }
 
@@ -295,7 +295,7 @@ figcaption{
 }
 
     /* adds caption */
-    figcaption{
+    .caption, figcaption{
         display: block;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
@@ -303,6 +303,7 @@ figcaption{
         text-decoration:none;
         margin: 10px;
         color:black;
+        font-size: 16px;
     }
 
     #moreinfo{
