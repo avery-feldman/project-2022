@@ -264,6 +264,7 @@ figcaption{
     /* changes footer font size */
     footer div p, footer div a{
         font-size: 18px;
+        
 }
 
 }
@@ -310,4 +311,3 @@ figcaption{
     }
 
 }
-
