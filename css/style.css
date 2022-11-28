@@ -260,6 +260,12 @@ figcaption{
         width: 100%;
     }
 
+    /* changes footer font size */
+    footer div p, footer div a{
+        font-size: 18px;
+        
+}
+
 }
 
 @media screen and (min-width:1300px){
@@ -304,4 +310,3 @@ figcaption{
     }
 
 }
-
