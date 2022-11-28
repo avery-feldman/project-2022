@@ -61,6 +61,7 @@ main{
 }
 
 h1{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
     padding: 10px;
@@ -70,7 +71,8 @@ h1{
 
 /* hides header in album 1 and 2 */
 .album-header{
-    display: none;
+    visibility:collapse;
+
 }
 
 main p{
@@ -187,7 +189,7 @@ footer div a:hover, footer div a:focus{
 
 /* hides captions */
 figcaption{
-    display: none;
+    display:none;
 }
 
 /* add documentation to explain what css does */
@@ -237,7 +239,7 @@ figcaption{
     }
 
     .album-header, h1{
-        display: block;
+      visibility: visible;
       font-size: 50px;
       
   }
@@ -258,6 +260,11 @@ figcaption{
     .flex figure img{
         width: 100%;
     }
+
+    /* changes footer font size */
+    footer div p, footer div a{
+        font-size: 18px;
+}
 
 }
 
@@ -288,7 +295,7 @@ figcaption{
 
     /* adds caption */
     figcaption{
-        display:block;
+        display: block;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         text-align: center;
