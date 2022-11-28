@@ -1,10 +1,3 @@
-/* Centers scroll bar on image when in focus */
-    function Scroll(obj) {
-        console.log("hi")
-        obj.scrollIntoView();
-
-    }
-
 /* Switches between late night hangout images from other album when moused over or focus */
 document.querySelector("#latenight").addEventListener("mouseover", function () {
     document.querySelector("#latenight").src = "images/latenighthangout.jpg";
